@@ -22,7 +22,6 @@ function Wechat(opts){
             that.access_token=data.access_token;
             that.expires_in=data.expires_in;
             that.savaAccessToken(data)
-
         })
 }
 Wechat.prototype.isValidAccessToken=function(data){

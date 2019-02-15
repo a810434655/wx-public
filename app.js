@@ -1,6 +1,7 @@
 "use strict"
-
+// 导入koa
 var Koa=require("koa");
+// 导入中间件
 var wechat=require("./wechat/g");
 var config={
     wechat:{
@@ -12,5 +13,5 @@ var config={
 var app = new Koa();
 app.use(wechat(config.wechat));
 
-app.listen(3200);
-console.log("OK：3200");
+app.listen(3000);
+console.log("OK：3000");
